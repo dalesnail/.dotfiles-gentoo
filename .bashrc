@@ -1,1 +1,0 @@
-/home/dalesnail/.bashrc
