@@ -28,6 +28,7 @@ alias sdown="sudo shutdown -P now"
 alias runescape="java -jar ~/Games/RuneLite.jar"
 alias FULLUPDATE="sudp emerge --sync && sudo --update --deep --with-bdeps y @world --ask && emerge --depclean --ask"
 alias .dots="cd ~/dotfiles && git add . && git add -u && git commit -m 'SuperPush' && git push origin master && cd -"
+alias emerge-update="emerge --update --newuse --deep --with-bdeps=y @world"
 
 # LITTLE BITS
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

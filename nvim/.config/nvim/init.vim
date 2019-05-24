@@ -20,6 +20,10 @@ call plug#begin('~/.config/nvim/plugged')
 " autocmd VimEnter * PlugInstall
 " autocmd VimEnter * q
 
+" RUST STUFF
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -43,7 +47,7 @@ colorscheme sorcerer
 " Text Stuff
 set encoding=utf-8
 let g:airline_powerline_fonts = 1
-let g:airline_theme='minimalist'
+let g:airline_theme='luna'
 let g:airline#extensions#tabline#enabled = 1
 
 " Header
