@@ -29,7 +29,7 @@ st.color3:       #ff9800
 st.color11:      #87875f
 ! blue
 st.color4:       #6688aa
-sa.color12:      #90b0d1
+st.color12:      #90b0d1
 ! magenta
 st.color5:       #8f6f8f
 st.color13:      #8181a6

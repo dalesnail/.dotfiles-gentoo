@@ -41,3 +41,4 @@ if [ -d ~/.bash_functions ]; then
 	done
 fi
 
+VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
