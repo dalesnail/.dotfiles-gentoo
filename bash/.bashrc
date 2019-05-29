@@ -25,7 +25,7 @@ alias dwmc="nvim ~/.dwm/config.h"
 alias dwmcomp=" cd ~/.dwm && sudo make clean install && cd - "
 alias brc="nvim ~/.bashrc"
 alias sdown="sudo shutdown -P now"
-alias runescape="java -jar ~/Games/RuneLite.jar"
+alias restart="sudo shutdown -r now"
 alias FULLUPDATE="sudp emerge --sync && sudo --update --deep --with-bdeps y @world --ask && emerge --depclean --ask"
 alias .dots="updot"
 alias emerge-update="emerge --update --newuse --deep --with-bdeps=y @world"
@@ -35,6 +35,7 @@ alias emerge-update="emerge --update --newuse --deep --with-bdeps=y @world"
 
 PS1="\[\033[1;35m\]\u \[\033[m\][\[\033[1;32m\]\w\[\033[m\]] "
 
+# Functions directory reference
 if [ -d ~/.bash_functions ]; then
 	for file in ~/.bash_functions/*; do
 		. "$file"

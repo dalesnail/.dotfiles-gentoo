@@ -71,5 +71,8 @@ synclient TapButton1=1
 # Keybinds
 xbindkeys
 
+# KeyMapping
+[[ -f ~./Xmodmap ]] && xmodmap ~/.Xmodmap
+
 # DWM
 dwm
