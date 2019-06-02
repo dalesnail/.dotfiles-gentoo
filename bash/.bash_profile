@@ -9,3 +9,5 @@ fi
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1  ]]; then
 	startx
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"

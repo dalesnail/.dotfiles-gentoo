@@ -16,6 +16,7 @@ fi
 
 
 # Put your fun stuff here.
+export PATH="$HOME/.cargo/bin:$PATH"
 
 
 # ALIASES
@@ -26,14 +27,14 @@ alias dwmcomp=" cd ~/.dwm && sudo make clean install && cd - "
 alias brc="nvim ~/.bashrc"
 alias sdown="sudo shutdown -P now"
 alias restart="sudo shutdown -r now"
-alias FULLUPDATE="sudp emerge --sync && sudo --update --deep --with-bdeps y @world --ask && emerge --depclean --ask"
+alias FULLUPDATE="sudo emerge --sync && sudo emerge --update --deep --with-bdeps y @world --ask && sudo emerge --depclean --ask"
 alias .dots="updot"
-alias emerge-update="emerge --update --newuse --deep --with-bdeps=y @world"
+alias emerge-update="sudo emerge --update --newuse --deep --with-bdeps=y @world"
 
 # LITTLE BITS
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-PS1="\[\033[1;35m\]\u \[\033[m\][\[\033[1;32m\]\w\[\033[m\]] "
+PS1="\[\033[90m\]\u \[\033[90m\][\[\033[1;32m\]\w\[\033[90m\]] "
 
 # Functions directory reference
 if [ -d ~/.bash_functions ]; then

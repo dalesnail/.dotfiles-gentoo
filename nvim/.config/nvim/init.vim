@@ -38,6 +38,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Fancy Start
 Plug 'mhinz/vim-startify'
 
+" ToDo list Plugin
+Plug 'irrationalistic/vim-tasks' 
+
 call plug#end()
 
 " Color Stuff
