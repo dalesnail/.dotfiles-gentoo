@@ -1,3 +1,4 @@
+"#
 "#  ██████╗  █████╗ ██╗     ███████╗    ██╗  ██╗    ███████╗███╗   ██╗ █████╗ ██╗██╗     
 "#  ██╔══██╗██╔══██╗██║     ██╔════╝    ╚██╗██╔╝    ██╔════╝████╗  ██║██╔══██╗██║██║     
 "#  ██║  ██║███████║██║     █████╗       ╚███╔╝     ███████╗██╔██╗ ██║███████║██║██║     
@@ -6,7 +7,10 @@
 "#  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝    ╚═╝  ╚═╝    ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝╚══════╝
 "#  Nvim init.vim
 
+" Quality of life changes
 set mouse=a
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " 256 bit color
 if  $TERM == "xterm-256color"
@@ -27,6 +31,7 @@ Plug 'racer-rust/vim-racer'
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " completion manager
 Plug 'roxma/nvim-completion-manager'
@@ -52,7 +57,18 @@ set encoding=utf-8
 let g:airline_powerline_fonts = 1
 let g:airline_theme='luna'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#alt_sep = 1
 
+" Keymapping
+:nnoremap <Tab> :bnext<CR>
+:nnoremap <S-Tab> :bprevious<CR>
+:nnoremap <C-X> :bdelete<CR>
+:nnoremap <Left> :echoe "Use h!"<CR>
+:nnoremap <Right> :echoe "Use l!"<CR>
+:nnoremap <Up> :echoe "Use k!"<CR>
+:nnoremap <Down> :echoe "Use j!"<CR>
+:nnoremap <unique> ; :
+:inoremap <unique> <C-j> <Esc>
 " Header
 function! s:filter_header(lines) abort
 	let longest_line = max(map(copy(a:lines), 'strwidth(v:val)'))

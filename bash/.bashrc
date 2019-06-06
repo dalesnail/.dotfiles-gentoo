@@ -34,7 +34,7 @@ alias emerge-update="sudo emerge --update --newuse --deep --with-bdeps=y @world"
 # LITTLE BITS
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-PS1="\[\033[90m\]\u \[\033[90m\][\[\033[1;32m\]\w\[\033[90m\]] "
+PS1="\[\033[37m\]\u \[\033[37m\][\[\033[1;32m\]\w\[\033[37m\]] "
 
 # Functions directory reference
 if [ -d ~/.bash_functions ]; then
