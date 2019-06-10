@@ -99,6 +99,7 @@ hi link             diffIsA         Constant
 hi link             diffNoEOL       Constant
 hi link             diffCommon      Constant
 hi link             diffComment     Constant
+hi link 	    GitGutterChangeLine Normal
 
 " python
 hi pythonException  guifg=#90b0d1 guibg=NONE gui=NONE

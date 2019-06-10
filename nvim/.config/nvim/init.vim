@@ -46,11 +46,34 @@ Plug 'mhinz/vim-startify'
 " ToDo list Plugin
 Plug 'irrationalistic/vim-tasks' 
 
+" NerdTree
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" GIT
+Plug 'airblade/vim-gitgutter'
+
+" Surround
+Plug 'tpope/vim-surround'
+
+" Indent Markers
+Plug 'Yggdroot/indentline'
+
+" Cursors
+Plug 'terryma/vim-multiple-cursors'
+
+" Tabs Complete
+Plug 'ervandew/supertab'
+
 call plug#end()
 
 " Color Stuff
 syntax on
 colorscheme sorcerer
+
+" Number line stuff
+highlight clear LineNr
+
 
 " Text Stuff
 set encoding=utf-8
