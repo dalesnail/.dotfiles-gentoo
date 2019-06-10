@@ -72,7 +72,7 @@ plugins=(git
 	 cargo
 	 colorize
 	 rust
-	 
+	 zsh-autosuggestions 
         )
 
 source $ZSH/oh-my-zsh.sh
@@ -125,8 +125,18 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+#Scripts
+if [ -d ~/.bash_functions ]; then
+	for file in ~/.bash_functions/*; do
+		. "$file"
+	done
+fi
+
+
+
 
 # Put your fun stuff here.
 export PATH="$HOME/.cargo/bin:$PATH"
 
-
+#Color for autosuggestions
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=239"
