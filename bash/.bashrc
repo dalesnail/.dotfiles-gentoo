@@ -44,3 +44,6 @@ if [ -d ~/.bash_functions ]; then
 fi
 
 VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
+
+bind 'set show-all-if-ambiguous on'
+bind 'set completion-ignore-case on'
