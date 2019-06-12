@@ -6,13 +6,13 @@ static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "PragmataPro:style=bold:size=12" };
+static const char *fonts[]          = { "Helvetica Neue:style=Condensed Bold:size=12" };
 static const char dmenufont[]       = "PragmataPro:style=Bold:size=12";
 static const char col_gray1[]       = "#20292d";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#6b9b5b";
+static const char col_cyan[]        = "#3E4B51";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "≥", "≒", "≑", "≓" };
+static const char *tags[] = { "⬤", "⬤", "⬤", "⬤" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -39,8 +39,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "⌇",        NULL },    /* first entry is default */
-	{ "[#]",      tile },    /* no layout function means floating behavior */
+	{ "⬤",        NULL },    /* first entry is default */
+	{ "⬤ ⬤",      tile },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
