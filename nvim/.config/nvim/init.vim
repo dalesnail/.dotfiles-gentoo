@@ -65,6 +65,9 @@ Plug 'terryma/vim-multiple-cursors'
 " Tabs Complete
 Plug 'ervandew/supertab'
 
+" Font Stuff
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " Color Stuff

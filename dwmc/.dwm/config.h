@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int barsize   = 10;      /* Bar Size */
+static const unsigned int barsize   = 8;      /* Bar Size */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Helvetica Neue:style=Condensed Bold:size=12" };
-static const char dmenufont[]       = "PragmataPro:style=Bold:size=12";
+static const char dmenufont[]       = "Helvetica Neue:style=Condensed Bold:size=16";
 static const char col_gray1[]       = "#20292d";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "⬤", "⬤", "⬤", "⬤" };
+static const char *tags[] = { "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -39,8 +39,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "⬤",        NULL },    /* first entry is default */
-	{ "⬤ ⬤",      tile },    /* no layout function means floating behavior */
+	{ "  ",        NULL },    /* first entry is default */
+	{ "  ",      tile },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
