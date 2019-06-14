@@ -66,7 +66,7 @@ static const struct arg args[] = {
 	{ datetime, "%.5s                                                                                                                                                                                  ",     "%T"  }, 
 	{ keyboard_indicators, "%s  ", "c?"   },
 	/*{ vol_perc, "%s  |  ",    "/dev/mixer" },*/ 
-	{ wifi_essid, "    ",     "wlp3s0" },
-	{ battery_perc, "%s   ",     "BAT0"  },
-	/* { battery_state, "%s  ",     "BAT0" },*/
+	{ wifi_essid, "   %s  ",     "wlp3s0" },
+	{ battery_perc, "%s  ",     "BAT0"  },
+	{ battery_state, "%s ",     "BAT0" },
 };

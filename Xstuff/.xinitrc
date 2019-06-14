@@ -58,9 +58,13 @@ fi
 xcalib ~/.Xcalib/Lenovo_ThinkPad_X1_1366x768_glare_LP133WH2-TLM5.icc
 
 # slstatus
-while true; do
-	slstatus
-done &
+# while true; do
+# 	slstatus
+# done &
+
+
+# DWMbar
+~/.dwm/dwmbar/dwmbar.sh &
 
 # Mouse Tapping
 synclient TapButton1=1

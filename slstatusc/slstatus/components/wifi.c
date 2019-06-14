@@ -263,7 +263,7 @@
 				len = sizeof(ssid);
 
 			ssid[len - 1] = '\0';
-			fmt = bprintf("%s", ssid);
+			fmt = bprintf("%s TEST", ssid);
 		}
 
 		close(sockfd);
