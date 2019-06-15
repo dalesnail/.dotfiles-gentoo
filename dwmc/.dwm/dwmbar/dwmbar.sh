@@ -9,10 +9,18 @@ trap 'update' 5
 # Set the deliminter character.
 delim="  "
 
+
 status() { \
 
-	Date and time.
-	date '+%I:%M                                                                                                                                                                                      '
+	currenttime=$(date +%H:%M)
+	if [[ "$currenttime" > "17:59" ]] || [[ "$currenttime" < "07:59" ]]; then
+                echo "         " && feh --bg-scale ~/Pictures/Night.jpg
+	else
+		echo "         " && feh --bg-scale ~/Pictures/Day.jpg
+	fi	
+	
+	#Date and time.
+	date '+%I:%M                                                                                                                                                                                     '
 
 	grep "^\s*w" /proc/net/wireless | awk '{ print "  " }'
 	
@@ -40,6 +48,7 @@ update() { \
 	xsetroot -name "$(status | tr '\n' ' ')" &
     wait
 
+        #nightandday &
     wait
     }
 
