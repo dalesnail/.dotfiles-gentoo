@@ -36,6 +36,16 @@ status() { \
 	esac
 done 
 
+        #Charging State
+	cstate=$(cat /sys/class/power_supply/BAT0/status)
+	if [[ "$cstate" == "Charging" ]]; then
+		echo " "
+	else
+		:
+	fi
+
+
+
 	}
 
 update() { \
