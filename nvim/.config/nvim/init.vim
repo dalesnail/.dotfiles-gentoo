@@ -11,6 +11,7 @@
 set mouse=a
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+let mapleader =" "
 
 " 256 bit color
 if  $TERM == "xterm-256color"
