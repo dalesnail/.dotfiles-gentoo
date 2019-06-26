@@ -116,6 +116,8 @@ alias restart="sudo shutdown -r now"
 alias FULLUPDATE="sudo emerge --sync && sudo emerge --update --deep --with-bdeps y @world --ask && sudo emerge --depclean --ask"
 alias .dots="updot"
 alias emerge-update="sudo emerge --update --newuse --deep --with-bdeps=y @world"
+alias n="sudo -u dalesnail nnn -l -d"
+alias dualscreen="xrandr --auto --output DP1 --mode 1920x1080 --left-of LVDS1"
 
 VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 

@@ -56,3 +56,6 @@ st.opacity: 255
 ! Font
 st.font: PragmataPro:pixelsize=17:antialias=true:autohint=true;
 st.chscale: 0.9
+
+! Cursor
+st.cursorshape: 6

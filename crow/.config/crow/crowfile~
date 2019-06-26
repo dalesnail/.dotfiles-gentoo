@@ -1,0 +1,17 @@
+editor: emacs
+// The above line declares the editor, Do not move this from the top!
+-<<<>  crowfile: /home/dalesnail/.config/crow/crowfile
+-<<<>  ranger: /home/dalesnail/.config/ranger/rc.conf
+-<<<>  nvim: /home/dalesnail/.config/nvim/init.vim
+-<<<>  zsh: /home/dalesnail/.zshrc
+-<<<>  xinit: /home/dalesnail/.xinitrc
+-<<<>  tmux: /home/dalesnail/.tmux.conf
+-<<<>  crowalias: /home/dalesnail/rust/crow/src/aliases.rs
+-<<<>  fetch: /home/dalesnail/.config/.scripts/snailfetch
+-<<<>  xresources: /home/dalesnail/.Xresources
+-<<<+>  crow: /home/dalesnail/nest/crow
+-<<<+>  projects: /home/dalesnail/nest/projects
+-<<<>  test: /home/dalesnail/.config/test/test.conf
+-<<<>  testc: /home/dalesnail/.config/test/test.c
+-<<<>  testh: /home/dalesnail/.config/test/config.h
+-<<<>  testest: /home/dalesnail/.config/test/test.test
