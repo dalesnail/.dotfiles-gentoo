@@ -14,9 +14,9 @@ status() { \
 
 	currenttime=$(date +%H:%M)
 	if [[ "$currenttime" > "17:59" ]] || [[ "$currenttime" < "07:59" ]]; then
-                echo "         " && feh --bg-scale ~/Pictures/Night.jpg
+                echo "         " && feh --bg-scale ~/Pictures/Night-Water.jpg
 	else
-		echo "         " && feh --bg-scale ~/Pictures/Day.jpg
+		echo "         " && feh --bg-scale ~/Pictures/Day-Water.jpg
 	fi	
 	
 	#Date and time.
