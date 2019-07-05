@@ -11,38 +11,41 @@
 !  ├─ based on sorcerer by Jeet Sukumaran (http://jeetworks.org)
 !  └─ based on mustang by Henrique C. Alves (hcarvalhoalves@gmail.com)
 ! special
-! █▓▒░ scorcerer colors
-st.foreground:   #c2c2b0
-st.background:   #20292d
-st.cursorColor:  #c2c2b0
+*.foreground:   #ffffff
+*.background:   #20292d
+*.cursorColor:  #ffffff
+
 ! black
-st.color0:       #111111
-st.color8:       #181818
+*.color0:       #282a2e
+*.color8:       #373b41
+
 ! red
-st.color1:       #aa4450
-st.color9:       #ff6a6a
+*.color1:       #ece8af
+*.color9:       #d37a70
+
 ! green
-st.color2:       #719611
-st.color10:      #b1d631
+*.color2:       #ece8af
+*.color10:      #d37a70
+
 ! yellow
-st.color3:       #ff9800
-st.color11:      #87875f
+*.color3:       #ff7600
+*.color11:      #ff9200
+
 ! blue
-st.color4:       #6688aa
-st.color12:      #90b0d1
+*.color4:       #666666
+*.color12:      #dcc045
+
 ! magenta
-st.color5:       #8f6f8f
-st.color13:      #8181a6
+*.color5:       #c56257
+*.color13:      #c56257
+
 ! cyan
-st.color6:       #528b8b
-st.color14:      #87ceeb
+*.color6:       #ffe055
+*.color14:      #d2d3d5
+
 ! white
-st.color7:       #d3d3d3
-st.color15:      #c1cdc1
-! stylized
-st.colorIT:      #719611
-st.colorBD:      #d3d3d3
-st.colorUL:      #528b8b
+*.color7:       #666666
+*.color15:      #e6e3bd
 ! end-colors
 
 
