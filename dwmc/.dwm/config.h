@@ -64,6 +64,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,			XK_Print,  spawn,	   SHCMD("scrot '%m-%d-%Y_%H:%M:%S_screenshot.png' -e 'mv $f ~/Pictures'") },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacs -fs") },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },

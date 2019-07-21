@@ -80,6 +80,8 @@ Plug 'arzg/vim-wizard'
 Plug 'szorfein/fantasy.vim'
 Plug 'KKPMW/sacredforest-vim'
 Plug 'rakr/vim-two-firewatch'
+Plug 'caksoylar/vim-mysticaltutor'
+
 " Font Stuff
 Plug 'ryanoasis/vim-devicons'
 
